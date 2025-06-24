@@ -1,0 +1,9 @@
+[package]
+name = "classfile"
+description = "Parsing Logic for the .class files "
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+strum_macros.workspace = true
+bitflags.workspace = true

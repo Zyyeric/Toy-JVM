@@ -1,6 +1,14 @@
-[package]
-name = "JVM"
-version = "0.1.0"
-edition = "2021"
+[workplace]
+resolver = "3"
+members = ["classfile", "vm"]
 
-[dependencies]
+[workplace.package]
+version = "0.1.0"
+keywords = ["JVM", "Java Virtual Machine", "virtual machine"]
+edition = "2024"
+
+[workplace.dependencies]
+classfile = {path = "classfile", version = "0.1.0"}
+vm = {path = "vm", version = "0.1.0"}
+strum_macros = {version = "0.27.1", features = ["Display"]}
+bitflags = {version = "2.9.1"}
